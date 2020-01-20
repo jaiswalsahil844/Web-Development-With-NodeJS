@@ -1,0 +1,17 @@
+/* Precendence order id > class > element > * */
+
+* {
+    background-color: pink;
+}
+
+#id1 {
+    background-color: lightgreen;
+}
+
+div {
+    background-color: lightseagreen;
+}
+
+.cl1 {
+    background-color: lightcoral;
+}

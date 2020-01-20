@@ -1,0 +1,32 @@
+* {
+    color: red;
+    background-color: gray;
+}
+
+body {
+    margin-top: 50px;
+}
+
+div {
+    margin-left: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+#p2 {
+    font-family: Arial;
+}
+
+#p3 {
+    margin-left: 20px;
+}
+
+.osmpara {
+    background-color: lightpink;
+}
+
+.bigpara {
+    font-size: 50px;
+}

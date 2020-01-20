@@ -1,0 +1,31 @@
+ul > li {
+    color: blue;
+}
+
+ol > li {
+    color: red;
+}  
+
+ul ul {
+    font-style: italic;
+}
+
+ul li {
+    font-size: 20pt;
+}
+
+ul li li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol + p {
+    background-color: powderblue;
+}
+
+ol ~ ul {
+    background-color: saddlebrown;
+}
+
+#l1, #l2 {
+    background-color: lightsalmon;
+}

@@ -1,0 +1,37 @@
+#click {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    font-size: 20pt;
+    color: white;
+    background-color: blueviolet;
+  }
+  
+  #click:hover {
+    color: darkblue;
+    background-color: blanchedalmond;
+  }
+  
+  #click:active {
+    font-size: 10pt;
+  }
+  
+  /* first child */
+  #list1 :first-child {
+    font-size: 30pt;
+  }
+  
+  /* odd child */
+  #list2 :nth-child(2n + 1) {    
+    color: green;
+  }
+  
+  /* even child */
+  #list2 :nth-child(2n) {    
+    color: red;
+  }
+
+  /* any child */
+  #list1 :nth-child(2) {    
+    color: blue;
+  }
