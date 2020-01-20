@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="todo"> <button id="btn">ADD</button>
+    <br>
+    <ul id="list">
+        <li>Task One</li>
+    </ul>
+    <p id="para">Hello</p>
+    <script>
+        let todoBox = document.getElementById('todo')
+        let addBtn = document.getElementById('btn')
+        let todoList = document.getElementById('list')
+
+        addBtn.onclick = function () {
+            let todo = todoBox.value 
+            
+            // slow
+            // todoList.innerHTML += `<li>${todo}</li>`
+            todoList.innerHTML += '<li>' + todo + '</li>'
+            
+            // fast
+            // let newTaskListItem = document.createElement('li')   // <li></li>
+            // newTaskListItem.innerText = todo
+            // todoList.appendChild(newTaskListItem)
+
+        }
+    </script>
+</body>
+</html>

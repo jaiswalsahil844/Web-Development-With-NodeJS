@@ -1,0 +1,114 @@
+// download & install git
+https://git-scm.com
+
+// to get the code and history of any repository you clone it
+git clone url
+e.g
+git clone https://github.com/sj-sahil/Salary_Management_System1
+
+// for new repo
+// initialized empty git repo in current folder
+git init
+git init .
+
+// status of file
+git status
+
+// add global user name and email
+git config --global user.name "Sahil Jaiswal"
+git config --global user.email "sahiljaiswal225@gmail.com"
+
+// added a new file
+git add file_name
+e.g
+git add file01.js
+// added all
+git add -A
+
+// to see the history of any repo, you see the log of it
+git log
+// history in single line
+git log --oneline
+// hoistory in graph model
+git log --onleline --color --graph --decorate
+
+// alias (user defined command)
+git config --global alias.fulltree "log --onleline --color --graph --decorate"
+git fulltree
+
+// commit new file
+git commit 
+// wrote commit message and exit
+// esc :wq for  save and exit
+git commit -m "commnet_meesage"
+
+// Branches & Merging
+// when you merge,Git show you a diff
+// a diff is th difference btw the current code and the code you want to merge in
+// also show modified items in file
+git diff
+
+// create new branch
+git checkout -b new_brach_name
+
+// you can see the current branch you're using
+git branch
+
+// and change the current branch
+git checkout branch_name
+
+// Merge
+// once you've isolated a branch, you'll want to incorporate those changes back into the main branch. 
+// You want to select the branch you want to merge into and specify the branch you're merging from
+git checkout stable
+git merge master 
+
+// Stash to the rescue
+// if you have a merge conflict, using stash will throw away the changes to the current branch and allow you to merge
+git stash
+
+// create a new repository on the command line
+echo "# newRepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sj-sahil/newRepo.git
+git push -u origin master
+
+// push an existing repository from the command line
+git remote add origin https://github.com/sj-sahil/newRepo.git
+git push -u origin master
+
+// for all branch
+git push -u origin --all
+
+// to see fetch and push
+git remote -v
+// to see remote
+git remote
+
+// cherry pick
+git cherry-pick branch_names
+
+// to see brach graph in github
+insights -> network
+
+// fork repo
+// and clone your fork repo
+
+// pull request
+ 
+// merkle tree (merklization)
+
+
+// markdown_demo.md
+# Heading 1
+## Heading 2
+### Heading 3
+###### Heading 6
+
+[Follow link here](http://your.link/here)
+![My Image Name](http://link/to/image.jpg)
+
+_Italic text like this_
+**Bold text like this**

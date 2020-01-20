@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="fizzbuzz"></ul>
+
+    <script>
+        let fblist = document.getElementById('fizzbuzz')
+        let startTime = new Date().getTime()
+
+        let listData = ''
+        for(let i=1 ; i<=1000; i++){
+            let item = ''
+            
+            if(i%3 == 0) item += 'fizz'
+            if(i%5 == 0) item += 'buzz'
+            if(item == '') item += i
+
+            // fblist.innerHTML += '<li>' + item + '</li>'
+            listData += '<li>' + item + '</li>'
+
+        }
+        fblist.innerHTML = listData
+        let endTime = new Date().getTime()
+        console.log(endTime-startTime)
+    </script>
+</body>
+</html>
