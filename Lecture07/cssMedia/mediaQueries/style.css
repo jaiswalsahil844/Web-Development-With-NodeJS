@@ -1,0 +1,29 @@
+div {
+    background-color: green;
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+}
+
+.important {
+    color: orange;
+}
+
+/* for screen */
+/* @media (max-width: 700px) {
+    div {
+        background-color:pink;
+    }
+} */
+@media screen and (max-width: 700px) {
+    div {
+        background-color:pink;
+    }
+}
+/* for printing */
+@media print {
+    .important {
+        font-weight: bold;
+        font-size: 25pt;
+    }
+}

@@ -1,0 +1,27 @@
+div {
+    background-color: powderblue;
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+}
+
+/* if expand from small to large screen use min-width else max-width*/
+@media (min-width: 500px) {
+    div {
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width: 600px) {
+    div {
+        background-color: brown;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 700px) {
+    div {
+        background-color: black;
+    }
+}
