@@ -1,0 +1,41 @@
+#p2 {
+    /* position: static;  */ /* this is default */
+    /* position: sticky; */
+
+    /* position: relative; */
+    /* position: fixed; */
+    /* position: absolute; */
+}
+
+div {
+    background-color: lightcyan;
+    border: solid 5px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* An element is positioned based on the user's scroll position */
+#div1 {
+    position: sticky;
+    top: 5px;
+}
+
+/* An element is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed) */
+/* #div2 {
+    position: absolute;
+    top: 150px;
+} */
+
+/* An element is positioned relative to its normal position */
+/* #div2 {
+    position: relative;
+    top: 30px;
+} */
+
+/* An element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
+/* #div3 {
+    position: fixed;
+    width: 300px;
+    top: 20px;
+    left: 30px;
+} */

@@ -1,0 +1,14 @@
+#div1 {
+    height: 70px;
+    width: 70px;
+    margin: 50px;
+    background-color: orange;
+
+    /* many transform property use in single */
+   
+    /* transform: translate(30px,30px); */
+    /* transform: scale(2);  */
+    /* transform: skew(30deg,30deg); */
+    transform: rotate(45deg);
+
+}

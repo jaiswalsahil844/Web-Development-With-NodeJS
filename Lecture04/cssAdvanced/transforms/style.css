@@ -1,0 +1,39 @@
+body {
+   margin-left: 100px;
+}
+
+div {
+    border: solid 2px yellow;
+    background-color: violet;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    font-size: 20pt;
+    padding: 10px;
+}
+
+.two {
+    transform: translate(30px, -40px);
+    
+}
+
+.three {
+    transform: scale(2,0.5);
+}
+
+.five {
+    transform: rotate(30deg);
+} 
+
+.seven {
+    transform: skew(30deg,30deg);
+}
+
+.nine {
+    transform: scaleX(2) scaleY(1.5) skewX(10deg) skewY(20deg);
+}
+
+.ten {
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    transform: matrix(4,3,4,5,6,7);
+}

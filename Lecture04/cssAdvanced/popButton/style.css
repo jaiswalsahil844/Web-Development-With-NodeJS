@@ -1,0 +1,27 @@
+div {
+    border: solid 4px black;
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    margin: 100px;
+    font-size: 20pt;
+    color: white;
+    border-radius: 20px;
+    background-color: brown;
+
+    transition: 1s;
+    
+    box-shadow: 10px 10px 5px grey;
+}
+
+div:hover {
+    transform: translate(-8px,-8px);
+    box-shadow: 18px 18px 8px grey;
+    transition: 2s;
+}
+
+div:active {
+    transform: translate(4px,4px);
+    box-shadow: 6px 6px 3px grey;
+    transition: 0.5s;
+}

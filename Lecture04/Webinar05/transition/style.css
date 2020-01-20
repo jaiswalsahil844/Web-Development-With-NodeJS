@@ -1,0 +1,26 @@
+div {
+    margin: 100px;
+}
+
+#div1 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+}
+
+#div2 {
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 50px;
+}
+
+#div1:hover {
+    background-color: pink;
+    height: 40px;
+    transition: background-color 2s, height 4s;
+}
+
+div:hover + div {
+    margin-left: 200px;
+    transition: margin 4s;
+}

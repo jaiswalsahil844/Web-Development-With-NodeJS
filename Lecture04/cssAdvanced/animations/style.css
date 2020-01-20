@@ -1,0 +1,38 @@
+div {
+    border: solid 2px brown;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    animation: leftright 2s infinite;
+}
+
+.two {
+    animation-timing-function: ease-in;
+}
+
+.three {
+    animation-timing-function: ease-out;
+}
+
+.four {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leftright {
+
+    0% {
+        background-color: purple;
+    }
+    33% {
+        background-color: orange;
+    }
+    66% {
+        background-color: orangered;
+        transform: rotate(45deg);
+    }
+    100% {
+        background-color: purple;
+    }
+}
