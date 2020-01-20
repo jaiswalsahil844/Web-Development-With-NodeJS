@@ -1,0 +1,41 @@
+#sampleDiv {
+    height: 300px;
+    width: 300px;
+    background-color: indianred;
+}
+
+@media (max-width: 1500px) and (max-width: 1000px) {
+    #sampleDiv {
+        background-color:darkcyan;
+    }
+}
+
+@media (max-width: 1000px) {
+    #sampleDiv {
+        background-color:peru;
+    }
+}
+
+@media (max-width: 750px) {
+    #sampleDiv {
+        background-color:mediumvioletred;
+    }
+}
+
+@media (max-width: 500px) {
+    #sampleDiv {
+        background-color:green;
+    }
+}
+
+/* for landscape orientation in mobile */
+@media (min-width : 720px) and (orientation: landscape){
+
+}
+
+/* for black and white moniter or screen */
+@media (not(color)) {
+    #sampleDiv {
+        background-color: gray;
+    }
+}
