@@ -1,0 +1,45 @@
+.container {
+    height: 600px;
+    background-color: lightpink;
+
+    display: flex;
+    /* default */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    
+    /* in horizontal direction */
+    justify-content: space-around;
+
+    /* in vertical direction */
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.item {
+    background-color: lightblue;
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    font-size: 30px;
+    flex-grow: 1;
+}
+
+#item11 {
+     order: 1;
+     /* it is applicable when "flex-wrap: nowrape;" */
+     /* flex-shrink: 1; */
+}
+
+#item12 {
+    order: -1;
+    flex-grow: 1;
+}
+
+#item15 {
+    /* flex-grow: 5; */
+
+    /* it is applicable when "flex-wrap: nowrape;" */
+    /* align-self: flex-end; */
+}

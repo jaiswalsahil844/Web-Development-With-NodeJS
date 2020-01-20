@@ -1,0 +1,25 @@
+.container {
+    /* width: 100vh; */
+    /* height: 100vh; */
+    background-color: lightsalmon;
+    
+    display: flex; 
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.box2 {
+    flex-grow: 1;
+}
+div div {
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    margin: 10px;
+    /* flex-grow: 0.5; */
+}
