@@ -8,15 +8,31 @@ window.onload = function () {
         for(let task of tasklist){
 
             let item = document.createElement('li');
-            item.innerText = task;
             list.appendChild(item);
-        }
-    }
 
+            let span = document.createElement('span');
+            span.innerText = task;
+            item.appendChild(span);
+
+            let upbtn = document.createElement('button');
+            upbtn.innerText = "up";
+            item.appendChild(upbtn);
+
+            let downbtn = document.createElement('button');
+            downbtn.innerText = "down";
+            item.appendChild(downbtn);
+
+            let sbtn = document.createElement('button');
+            sbtn.innerText = "strikethrough";
+            item.appendChild(sbtn);
+
+        }
+
+    }
     let inp = document.getElementById('inp');
     let btn = document.getElementById('btn');
     let list = document.getElementById('list');
-
+    
     function addNewTask () {
 
         let val = inp.value;

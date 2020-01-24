@@ -1,0 +1,85 @@
+document
+HTMLDocument http://127.0.0.1:5500/Lecture07/Online/select/index.html
+
+document.body
+<body>
+
+document.getElementsByTagName('p')
+HTMLCollection { 0: p#p1.para, 1: p#p2.para, 2: p
+, length: 3, … }
+
+document.getElementsByClassName('para')
+HTMLCollection { 0: p#p1.para, 1: p#p2.para
+, length: 2, … }
+
+document.getElementById('inpbox')
+<input id="inpbox">
+
+document.getElementsByClassName('para')
+HTMLCollection { 0: p#p1.para, 1: p#p2.para
+, length: 2, … }
+
+let p2 = document.getElementsByClassName('para')[1]
+undefined
+p2
+<p id="p2" class="para">
+
+p2.innerText
+"This is another para"
+p2.innerHTML
+"
+        This is <b>another</b> para
+    "
+p2.outerHTML
+"<p class=\"para\" id=\"p2\">
+        This is <b>another</b> para
+    </p>"
+p2.innerText = "some new data"
+"some new data"
+p2.innerText = "hello <b>bold</b> text"
+"hello <b>bold</b> text"
+p2.innerText
+"hello <b>bold</b> text"
+p2.innerHTML = "hello <b>bold</b> text"
+"hello <b>bold</b> text"
+p2.innerText
+"hello bold text"
+p2.getAttribute('class')
+"para"
+p2.getAttribute('id')
+"p2"
+p2.setAttribute('contentedtable',true)
+undefined
+p2.setAttribute('spellcheck',false)
+undefined
+p2.outerHTML
+"<p class=\"para\" id=\"p2\" contentedtable=\"true\" spellcheck=\"false\">hello <b>bold</b> text</p>"
+let i = document.getElementById('inpbox')
+undefined
+i.innerHTML
+""
+i.innerText
+""
+i.value
+"sahil"
+i.value = 'sumit'
+"sumit"
+i.setAttribute('type','email')
+undefined
+i.validity
+ValidityState { valueMissing: false, typeMismatch: true, patternMismatch: false, tooLong: false, tooShort: false, rangeUnderflow: false, rangeOverflow: false, stepMismatch: false, badInput: false, customError: false }
+
+i.validity
+ValidityState { valueMissing: false, typeMismatch: false, patternMismatch: false, tooLong: false, tooShort: false, rangeUnderflow: false, rangeOverflow: false, stepMismatch: false, badInput: false, customError: false }
+
+let btn = document.getElementById('btn')
+undefined
+btn
+<button id="btn">
+
+btn.innerText
+"Button"
+btn.innerHTML = '<b>BOLD</b>'
+"<b>BOLD</b>"
+
+​

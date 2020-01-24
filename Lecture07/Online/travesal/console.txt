@@ -1,0 +1,74 @@
+Live reload enabled. index.html:65:13
+temp0
+<li>
+
+let mi = temp0
+undefined
+mi.parentElement
+<ol>
+
+mi.parentElement.parentElement
+<li>
+
+mi.parentElement.parentElement.previousElementSibling
+<li>
+
+mi.parentElement.parentElement.previousElementSibling.children
+HTMLCollection [ ol
+ ]
+
+mi.parentElement.parentElement.previousElementSibling.children[0]
+<ol>
+
+mi.parentElement.parentElement.previousElementSibling.children[0].children
+HTMLCollection(4) [ li, li, li, li
+ ]
+
+mi.parentElement.parentElement.previousElementSibling.children[0].children[2]
+<li>
+
+mi.previousElementSibling
+<li>
+
+mi.nextElementSibling
+<li>
+
+mi.parentElement.remove(mi)
+undefined
+
+mi.parentElement
+<ol>
+
+​let mi = temp0
+undefined
+mi
+<li>
+
+mi.parentElement.parentElement
+<li>
+
+mi.parentElement.remove()
+undefined
+mi.parentElement
+<ol>
+
+mi.parentElement.parentElement
+null
+let dee = temp1
+undefined
+dee
+<li>
+
+dee.appendChild(mi.parentElement)
+<ol>
+
+mi.remove()
+undefined
+dee.previousElementSibling.previousElementSibling
+<li>
+
+dee.previousElementSibling.previousElementSibling.children[0]
+<ol>
+
+dee.previousElementSibling.previousElementSibling.children[0].appendChild(mi)
+<li>
