@@ -8,7 +8,7 @@ window.onload = function () {
     let divResult = document.getElementById('divResult');
 
     btnCount.onclick = function () {
-        count = count + 1;
+        count++;
         console.log('count ' + count);
     }
 
