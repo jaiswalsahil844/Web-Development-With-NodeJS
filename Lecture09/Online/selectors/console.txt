@@ -1,0 +1,102 @@
+Live reload enabled. index.html:47:13
+$('div').text('Somthing else')
+Object { 0: div#one.item, 1: div.item, 2: div#three, 3: div.item, 4: div, 5: div.item
+, length: 6, prevObject: Object(1) }
+
+$('div.item').text('another')
+Object { 0: div#one.item, 1: div.item, 2: div.item, 3: div.item
+, length: 4, prevObject: Object(1) }
+
+$('#one').text('first item')
+Object [ div#one.item
+ ]
+
+document.getElementById('one')
+<div id="one" class="item">
+
+$('#one')
+Object [ div#one.item
+ ]
+
+$('#one') == document.getElementById('one')
+false
+$('#one')[0] == document.getElementById('one')
+true
+$('#one')
+Object [ div#one.item
+ ]
+
+$('#one').text('first')
+Object [ div#one.item
+ ]
+
+$('div')
+Object { 0: div#one.item, 1: div.item, 2: div#three, 3: div.item, 4: div, 5: div.item
+, length: 6, prevObject: Object(1) }
+
+$('div')[0]
+<div id="one" class="item">
+
+$('div')[3]
+<div class="item">
+
+$('#one').text('hello')
+Object [ div#one.item
+ ]
+
+let o = $('#one')
+undefined
+o
+Object [ div#one.item
+ ]
+
+o.text()
+"hello"
+o.text('world')
+Object [ div#one.item
+ ]
+
+o.html()
+"world"
+o.html('hello <b>World</b>')
+Object [ div#one.item
+ ]
+
+o.attr('height',2000)
+Object [ div#one.item
+ ]
+
+o.attr('height')
+"2000"
+o.attr('height',null)
+Object [ div#one.item
+ ]
+
+o.attr('height',undefined)
+Object [ div#one.item
+ ]
+
+o.attr('style','color: red')
+Object [ div#one.item
+ ]
+
+o.css('color')
+"rgb(255, 0, 0)"
+o.css('color','blue')
+Object [ div#one.item
+ ]
+
+o.css('font-size','20pt')
+Object [ div#one.item
+ ]
+
+o.css('font-size','25pt').attr('width',2000)
+Object [ div#one.item
+ ]
+
+o.css('font-size','25pt').attr('width',2000).text('Hello SaHiL')
+Object [ div#one.item
+ ]
+
+​
+

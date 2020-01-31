@@ -1,0 +1,15 @@
+
+$
+function jQuery()
+
+jQuery
+function jQuery()
+
+$ == jQuery
+true
+$('div')
+Object { 0: div
+, length: 1, prevObject: Object(1) }
+
+$('div').html('Hello World')
+Object { 0: div, length: 1, prevObject: Object(1) }
