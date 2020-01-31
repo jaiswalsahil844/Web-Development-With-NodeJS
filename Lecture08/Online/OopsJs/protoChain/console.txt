@@ -1,0 +1,94 @@
+let a = {p: 10, q: 'sahil', r: true}
+undefined
+a
+Object { p: 10, q: "sahil", r: true }
+
+let b = Object.create(a)
+undefined
+let c = Object.create(b)
+undefined
+b
+Object {  }
+
+b.p
+10
+b.q
+"sahil"
+b.__proto__
+Object { p: 10, q: "sahil", r: true }
+
+c.__proto__
+Object {  }
+
+c.__proto__.__proto__
+Object { p: 10, q: "sahil", r: true }
+
+b.__proto__ == a
+true
+c.__proto__ == a
+false
+c.__proto__ == b
+true
+c.__proto__.__proto__ == a
+true
+a.isPrototypeOf(b)
+true
+a.isPrototypeOf(c)
+true
+b.__proto__.p++;
+10
+a
+Object { p: 11, q: "sahil", r: true }
+
+b
+Object {  }
+
+let x = 'asdfjjhg'
+undefined
+x.__proto__
+String { "" }
+
+x.__proto__ == String.prototype
+true
+
+(true).__proto__ == Boolean.prototype
+true
+(10).__proto__ == Number.prototype
+true
+a
+Object { p: 11, q: "sahil", r: true }
+
+a.__proto__
+Object { … }
+
+a.__proto__ == Object.prototype
+true
+
+let a = {x: 10}
+Object { x: 10 }
+
+a.__proto__
+Object { … }
+
+a.__proto__.__proto__
+null
+let b = 'hhfhjf'
+undefined
+b.__proto__
+String { "" }
+
+b.__proto__.__proto__
+Object { … }
+
+b.__proto__.__proto__.__proto__
+null
+Object.prototype.isPrototypeOf(String.prototype)
+true
+Object.prototype.isPrototypeOf(Number.prototype)
+true
+Object.prototype.isPrototypeOf(Boolean.prototype)
+true
+Object.prototype.isPrototypeOf(Function.prototype)
+true
+Object.prototype.isPrototypeOf(undefined)
+false

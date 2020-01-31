@@ -1,0 +1,36 @@
+> .load script.js
+function Person(name,age){
+ 
+    this.name = name;
+        this.age = age;
+            // this.isAdult = function () { return this.age >= 18}
+            }
+            
+            Person.prototype.isAdult = function () { return this.age >= 18}
+            let p = new Person('Sahil Jaiswal',21);
+            let p2 = new Person('Sumit',17);
+            
+            console.log(p.isAdult());
+            console.log(p2.isAdult());
+            console.log(p.isAdult == p2.isAdult);
+true
+false
+true
+undefined
+> p
+Person { name: 'Sahil Jaiswal', age: 21 }
+> p2
+Person { name: 'Sumit', age: 17 }
+> Person.prototype
+Person { isAdult: [Function] }
+> p.__proto__
+Person { isAdult: [Function] }
+> p2.__proto__
+Person { isAdult: [Function] }
+> Person.isPrototypeOf(p)
+false
+> Person.prototype.isPrototypeOf(p)
+true
+> Person.prototype.isPrototypeOf(p2)
+true
+> 
