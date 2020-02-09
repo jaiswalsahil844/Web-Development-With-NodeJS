@@ -5,12 +5,12 @@ let todos = [];
 
 app.get('/', (req, res) => {
 
-  let items = '';
-  for (let i = 0; i < todos.length; i++) {
-    items += `<li> ${todos[i]} <a href="/${i}/delete">X</a> </li> \n`
-  }
+    let items = '';
+    for (let i = 0; i < todos.length; i++) {
+        items += `<li> ${todos[i]} <a href="/${i}/delete">❌</a></li> \n`
+    }
 
-  res.send(`
+    res.send(`
   <form action="/add">
     <input name="task">
     <input type="submit">
@@ -23,35 +23,35 @@ app.get('/', (req, res) => {
 })
 
 app.get('/add', (req, res) => {
-  if (req.query.task) {
-    todos.push(req.query.task)
-    res.redirect('/')
-  } else {
-    res.send('Error: No task defined')
-  }
+    if (req.query.task) {
+        todos.push(req.query.task)
+        res.redirect('/')
+    } else {
+        res.send('Error: No task defined')
+    }
 })
 
 app.get('/:id', (req, res) => {
-  if (isNaN(parseInt(req.params.id))) {
-    res.send('Error: id not numerical')
-  } else {
-    res.send(todos[req.params.id])
-  }
+    if (isNaN(parseInt(req.params.id))) {
+        res.send('Error: id not numerical')
+    } else {
+        res.send(todos[req.params.id])
+    }
 })
 
 app.get('/:id/delete', (req, res) => {
-  if (isNaN(parseInt(req.params.id))) {
-    res.send('Error: id not numerical')
-  } else {
-    if (todos[req.params.id]) {
-      todos.splice(req.params.id, 1)
-      res.redirect('/')
+    if (isNaN(parseInt(req.params.id))) {
+        res.send('Error: id not numerical')
     } else {
-      res.send('Error: No task on this index')
+        if (todos[req.params.id]) {
+            todos.splice(req.params.id, 1)
+            res.redirect('/')
+        } else {
+            res.send('Error: No task on this index')
+        }
     }
-  }
 })
 
 app.listen(4444, () => {
-  console.log('Started')
+    console.log('Started')
 })
