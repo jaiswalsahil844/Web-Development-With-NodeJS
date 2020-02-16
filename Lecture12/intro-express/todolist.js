@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     for (let i = 0; i < todos.length; i++) {
         items += `<li> ${todos[i]} <a href="/${i}/delete">❌</a></li> \n`
     }
-
+    
     res.send(`
   <form action="/add">
     <input name="task">
