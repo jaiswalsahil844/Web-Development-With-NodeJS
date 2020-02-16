@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let content = "This is a new content";
+let content = "This is a new content here";
 
 console.log('Before write');
 
