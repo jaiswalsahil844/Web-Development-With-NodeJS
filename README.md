@@ -11,7 +11,7 @@ Student at Jamia Millia Islamia
 
 Full Stack Web Developer
 
-[Web Dev Info](https://sj-sahil.github.io/WebDev/)
+[Web Dev Info](https://jaiswalsahil844.github.io/WebDev/)
 
 <!---
 ![My Image](https://avatars3.githubusercontent.com/u/43785914?s=460&v=4)
