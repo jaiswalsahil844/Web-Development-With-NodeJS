@@ -9,9 +9,9 @@ Student at Jamia Millia Islamia
 
 ### Development
 
-Full Stack Web Developer
+Web Developer
 
-[Web Dev Info](https://jaiswalsahil844.github.io/WebDev/)
+[Web Dev Info](https://jaiswalsahil844.github.io/Web-Development-With-NodeJS/)
 
 <!---
 ![My Image](https://avatars3.githubusercontent.com/u/43785914?s=460&v=4)
